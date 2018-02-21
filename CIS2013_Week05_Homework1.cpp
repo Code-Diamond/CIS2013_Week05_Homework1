@@ -169,11 +169,11 @@ int getDay(int month, int year)
       }
     }
   }
-  //Add the last two digits of the year. 48 + 82 = 130.
+  //Add the last two digits of the year. 
   int secondNumber = convertToInt(lastTwo);
   number = number + secondNumber;
 
-  //Divide by 7 and take the remainder. This time, 1 means Sunday, 2 means Monday, and so on. A remainder of 0 means Saturday. 130 / 7 = 18, remainder 4, so December 16, 2482 will be on the fourth day of the week-- Wednesday. 
+  //Modulo last number by 7 days
   int result = number % 7;
 
 
@@ -325,5 +325,3 @@ int main()
   return 0;
 
 }
-
-
