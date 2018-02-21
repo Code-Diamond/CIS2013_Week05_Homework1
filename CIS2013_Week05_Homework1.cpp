@@ -38,7 +38,7 @@ int convertToInt(string s)
   return value;
 }
 
-//Print a calendar
+//Get the starting day of the week for a given month and year
 int getDay(int month, int year)
 {
   //The key-value (determination of day of week) algorithm
