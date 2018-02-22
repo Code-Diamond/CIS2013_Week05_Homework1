@@ -310,7 +310,7 @@ int main()
   //Additional dash for months that are less than 31
   for(int i = getNumberOfDays(month, year); i<=30; i++)
   {
-      cout << ("  -  ");  
+      cout << (" -  ");  
   }
 
   cout << "\n\n";
